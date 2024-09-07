@@ -9,9 +9,9 @@ The project link is - https://vyb-store-task.vercel.app.
 
 ## Project pathways
 
-"/" -> Home Page
-"/login" -> Login Page
-"/signup" -> Signup Page
-"/profile" -> Profile Page
-"/profile/address" -> Address Page
+"/" -> Home Page  
+"/login" -> Login Page  
+"/signup" -> Signup Page  
+"/profile" -> Profile Page  
+"/profile/address" -> Address Page  
 "/profile/store" -> My Store Page
