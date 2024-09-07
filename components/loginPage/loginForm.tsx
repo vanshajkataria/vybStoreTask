@@ -1,0 +1,114 @@
+import Image from "next/image";
+import React from "react";
+import loginImage from "@/assets/loginImage.png";
+import Link from "next/link";
+
+export default function loginForm() {
+  return (
+    <>
+      <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-12">
+          <div className="hidden md:block">
+            <Image src={loginImage} alt="..." />
+          </div>
+          <div className="flex flex-col justify-center gap-12 w-full md:w-3/4 mx-auto border border-primaryText py-12 px-6 md:px-0 md:py-0 md:border-none rounded-2xl">
+            <div className="flex flex-col justify-center items-center">
+              <h1 className="text-h1m md:text-h1 font-bold">Login</h1>
+            </div>
+            <div className="flex justify-center items-center gap-4 border border-primaryText w-fit mx-auto py-1 px-2 rounded-xl cursor-pointer">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#FFC107"
+                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"
+                  ></path>
+                  <path
+                    fill="#FF3D00"
+                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"
+                  ></path>
+                  <path
+                    fill="#4CAF50"
+                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"
+                  ></path>
+                  <path
+                    fill="#1976D2"
+                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"
+                  ></path>
+                </svg>
+              </span>
+              <span>Sign in with Google</span>
+            </div>
+            <div className="relative flex justify-center items-center">
+              <span className="absolute bg-[#ffffff] px-1">or</span>
+              <span className="w-full md:w-1/2 h-0.5 bg-primaryText"></span>
+            </div>
+            <div className="">
+              <div className="flex flex-col gap-2 pb-4">
+                <label
+                  htmlFor="email"
+                  className="text-h2m md:text-h2 font-bold"
+                >
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter Email"
+                  className="border border-primaryText p-2 rounded-xl"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label
+                  htmlFor="password"
+                  className="text-h2m md:text-h2 font-bold"
+                >
+                  Password
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter Password"
+                  className="border border-primaryText p-2 rounded-xl"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center items-center">
+              <button
+                type="submit"
+                className="border border-primary py-2 px-6 rounded-xl text-primary hover:text-[#fff] hover:bg-primary ease-in-out duration-300"
+              >
+                Login
+              </button>
+            </div>
+            <div className="relative flex justify-center items-center">
+              <span className="absolute bg-[#ffffff] px-1">
+                Don&apos;t have an account?
+              </span>
+              <span className="w-full md:w-1/2 h-0.5 bg-primaryText"></span>
+            </div>
+
+            <div className="flex justify-center items-center">
+              <Link href="/signup">
+                <button
+                  type="submit"
+                  className="border border-primary py-2 px-6 bg-primary rounded-xl  hover:text-primary text-[#fff] hover:bg-[#fff] ease-in-out duration-300"
+                >
+                  Sign Up
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
