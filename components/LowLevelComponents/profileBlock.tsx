@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import user from "@/assets/user.png";
+import Link from "next/link";
 
 export default function profileBlock() {
   return (
@@ -29,22 +30,30 @@ export default function profileBlock() {
           <span className="text-p1m md:text-p1">Change Profile Picture</span>
         </div>
         <div>
-          <h1 className="text-h1m md:text-h1 font-bold">Samira Hadid</h1>
+          <h1 className="text-h1m md:text-h1 font-bold w-full text-center">Samira Hadid</h1>
         </div>
         <div>
           <div className="flex flex-col gap-4">
+            <Link href="/profile">
             <div className="w-full text-center border border-primaryText rounded-2xl p-2">
               <span>Profile</span>
             </div>
+            </Link>
+            <Link href="/profile/store">
             <div className="w-full text-center border border-primaryText rounded-2xl p-2">
               <span>My Store</span>
             </div>
+            </Link>
+            <Link href="/profile/earning">
             <div className="w-full text-center border border-primaryText rounded-2xl p-2">
               <span>Earnings</span>
             </div>
+            </Link>
+            <Link href="/profile/address">
             <div className="w-full text-center border border-primaryText rounded-2xl p-2">
               <span>Address</span>
             </div>
+            </Link>
             <div className="w-full text-center border border-primaryText rounded-2xl p-2 bg-primary text-secondary">
               <span>Logout</span>
             </div>

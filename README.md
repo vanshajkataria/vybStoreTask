@@ -14,4 +14,5 @@ The project link is - https://vyb-store-task.vercel.app.
 "/signup" -> Signup Page  
 "/profile" -> Profile Page  
 "/profile/address" -> Address Page  
-"/profile/store" -> My Store Page
+"/profile/store" -> My Store Page  
+"/profile/earning" -> Earning Page  
