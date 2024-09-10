@@ -11,7 +11,7 @@ export default function startVybing() {
   const ref = useRef(null);
   return (
     <>
-      <section className="container mx-auto py-12">
+      <section className="px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px] 2xl:px-[150px] py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6" ref={ref}>
           {/* main block */}
           <div className="bg-primary p-6 text-tertiaryText rounded-2xl w-full md:w-3/4 mx-auto h-fit md:sticky md:top-48">

@@ -15,7 +15,7 @@ export default function Navbar() {
   };
   return (
     <>
-      <div className="lg:container mx-auto fixed left-0 right-0 pt-[12px] z-40">
+      <div className="px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px] 2xl:px-[150px] fixed left-0 right-0 pt-[12px] z-40">
         <div className="px-6 py-2 rounded-full flex justify-between items-center gap-[60px] bg-secondary/45 glass-blur">
           <Link href="/">
             <Image src={logo} alt="VYB Store Logo" width={100} />
