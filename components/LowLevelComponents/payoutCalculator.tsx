@@ -28,12 +28,10 @@ export default function payoutCalculator() {
             className="outline-none appearance-none p-2 w-full md:w-1/2"
           >
             <option
-              value="select"
+              value="Select influencer type?"
               disabled
-              selected
               className="text-secondaryText"
             >
-              Select influencer type?
             </option>
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
