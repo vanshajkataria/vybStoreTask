@@ -16,9 +16,9 @@ export default function Navbar() {
   return (
     <>
       <div className="px-[16px] md:px-[40px] lg:px-[70px] xl:px-[120px] 2xl:px-[150px] fixed left-0 right-0 pt-[12px] z-40">
-        <div className="px-6 py-2 rounded-full flex justify-between items-center gap-[60px] bg-secondary/45 glass-blur">
+        <div className="px-6 py-2 rounded-full flex justify-between items-center bg-secondary/45 glass-blur">
           <Link href="/">
-            <Image src={logo} alt="VYB Store Logo" width={100} />
+            <Image src={logo} alt="VYB Store Logo" className="w-16 md:w-24 block"/>
           </Link>
           {/* search bar */}
           <div className="relative">
@@ -26,7 +26,7 @@ export default function Navbar() {
               type="search"
               name="search"
               id="search"
-              className="bg-tertiaryText w-[290px] rounded-2xl flex items-center gap-1 py-2 pr-2 pl-8"
+              className="bg-tertiaryText rounded-2xl min-w-6 max-w-48 flex items-center gap-1 p-2 pl-6"
               placeholder="Search"
             />
             <label
@@ -155,7 +155,7 @@ export default function Navbar() {
           {/* navbar items end */}
           {/* hamburger icon */}
           <div className="block lg:hidden" onClick={toggleHamburger}>
-            <Image src={hamburger} alt="Hamburger Menu" height={48} />
+            <Image src={hamburger} alt="Hamburger Menu" height={40} />
           </div>
           {/* hamburger icon end*/}
         </div>
@@ -166,9 +166,9 @@ export default function Navbar() {
             isActive ? "-translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="p-12">
+          <div className="p-8">
             <div className="flex justify-end" onClick={toggleHamburger}>
-              <Image src={close} alt="Hamburger Menu" height={48} />
+              <Image src={close} alt="Hamburger Menu" height={40} />
             </div>
             <div className="flex flex-col justify-center h-full gap-6 ">
               <div className="flex flex-col gap-6">
